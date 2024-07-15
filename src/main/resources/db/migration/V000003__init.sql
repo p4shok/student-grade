@@ -1,0 +1,10 @@
+ALTER TABLE objects  alter column id add generated always as identity;
+insert into objects(teacher,name) values (1, 'Русский язык');
+insert into objects(teacher,name) values (2, 'Математика');
+insert into objects(teacher,name) values (3, 'Физика');
+insert into objects(teacher,name) values (4, 'География');
+ALTER TABLE marks  alter column id add generated always as identity;
+insert into marks(student,object,mark) values (1,2,44);
+insert into marks(student,object,mark) values (1,1,68);
+insert into marks(student,object,mark) values (2,2, 52);
+insert into marks(student,object,mark) values (2,1,43);
